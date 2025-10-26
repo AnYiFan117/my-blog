@@ -1,8 +1,18 @@
 baseurl: https://example.com/
 languageCode: en-us
 theme: stack
-title: Example Site
-copyright: Example Person
+title: AnYiFan
+copyright: AnYiFan
+
+# 更新时间：优先读取git时间 -> git时间不存在，就读取本地文件修改时间
+frontmatter:
+  lastmod:
+    - :git
+    - :fileModTime
+
+# 允许获取Git信息		
+enableGitInfo: true
+
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -13,20 +23,13 @@ DefaultContentLanguage: zh-cn
 hasCJKLanguage: true
 
 languages:
-    en:
-        languageName: English
-        title: Example Site
-        weight: 1
-        params:
-            sidebar:
-                subtitle: Example description
     zh-cn:
         languageName: 中文
-        title: 演示站点
+        title: AnYiFan
         weight: 2
         params:
             sidebar:
-                subtitle: 演示说明
+                subtitle: 一个又菜又爱玩的新人程序员
 
 services:
     # Change it to your Disqus shortname before using
@@ -76,7 +79,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: utterances
 
         disqusjs:
             shortname:
@@ -86,7 +89,7 @@ params:
             adminLabel:
 
         utterances:
-            repo:
+            repo: AnYiFan117/my-blog
             issueTerm: pathname
             label:
 

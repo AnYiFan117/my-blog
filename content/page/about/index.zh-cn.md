@@ -1,5 +1,5 @@
 ---
-title: 关于
+title: 关于我
 menu:
     main: 
         weight: -90
@@ -7,4 +7,4 @@ menu:
             icon: user
 ---
 
-This is a test page for i18n support.
+这个人很神秘，什么都没有写
