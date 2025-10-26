@@ -1,5 +1,6 @@
 ---
-title: 关于我
+title: "关于我"
+slug: "aboutme"
 menu:
     main: 
         weight: -90
