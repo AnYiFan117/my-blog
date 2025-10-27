@@ -1,7 +1,6 @@
 ---
 title: 《秽翼的尤斯蒂娅》简评
 date: 2025-10-26
-slug: short-review-of-ustiya
 description: 如果你了解基督教，那么游玩之后可能会有不一样的体验
 categories:
     - 杂谈

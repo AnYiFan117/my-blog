@@ -2,6 +2,7 @@
 title: "Transformer笔记"
 date: 2025-10-27
 description: "Transformer学习笔记，包含代码解读"
+image: transformer.png
 categories:
     - 论文学习
 tags:

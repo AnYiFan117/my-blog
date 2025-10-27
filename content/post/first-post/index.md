@@ -1,8 +1,9 @@
 ---
-title: 终于配好了
+title: Hugo+stack配置踩坑
 date: 2025-10-26
-slug: finally
 description: fuck
+categories:
+    - 技术文档
 
 tags: 
     - fuck
