@@ -1,0 +1,102 @@
+body {
+  /* Override default background with site-wide image */
+  background: url("/img/background.png") no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.55);
+  background-blend-mode: lighten;
+}
+
+:root {
+  --glass-surface-bg: rgba(255, 255, 255, 0.78);
+  --glass-surface-border: rgba(255, 255, 255, 0.55);
+  --glass-surface-shadow: 0 18px 45px rgba(31, 41, 55, 0.16);
+  --glass-surface-hover-shadow: 0 22px 55px rgba(31, 41, 55, 0.2);
+  --glass-surface-blur: 12px;
+}
+
+[data-scheme="dark"] {
+  body {
+    background-color: rgba(18, 18, 18, 0.65);
+    background-blend-mode: multiply;
+  }
+
+  --glass-surface-bg: rgba(48, 48, 48, 0.85);
+  --glass-surface-border: rgba(255, 255, 255, 0.12);
+  --glass-surface-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+  --glass-surface-hover-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
+}
+
+.left-sidebar,
+.right-sidebar,
+main.main {
+  /* Shared frosted surface for content & sidebars */
+  background-color: var(--glass-surface-bg);
+  border-radius: 18px;
+  border: 1px solid var(--glass-surface-border);
+  box-shadow: var(--glass-surface-shadow);
+  backdrop-filter: blur(var(--glass-surface-blur));
+  -webkit-backdrop-filter: blur(var(--glass-surface-blur));
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.left-sidebar,
+.right-sidebar {
+  padding: 1.75rem;
+  margin: 1.5rem 0;
+}
+
+.left-sidebar:hover,
+.right-sidebar:hover {
+  box-shadow: var(--glass-surface-hover-shadow);
+  transform: translateY(-2px);
+}
+
+main.main {
+  padding: 1.75rem;
+  margin: 1.5rem 0;
+  gap: var(--section-separation);
+}
+
+@media (min-width: 768px) {
+  main.main {
+    padding: calc(var(--main-top-padding) + 2rem) 2.25rem 2.25rem;
+  }
+}
+
+.article-content img {
+  /* Keep article images from spanning the full width and center them */
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+.article-page .main-article {
+  background: var(--glass-surface-bg);
+  border-radius: 18px;
+  border: 1px solid var(--glass-surface-border);
+  box-shadow: var(--glass-surface-shadow);
+  backdrop-filter: blur(var(--glass-surface-blur));
+  -webkit-backdrop-filter: blur(var(--glass-surface-blur));
+  transition: box-shadow 0.3s ease;
+}
+
+.article-page .main-article:hover {
+  box-shadow: var(--glass-surface-hover-shadow);
+}
+
+.article-content figure {
+  /* Override theme's negative margins and extra width */
+  margin: 2rem auto;
+  width: 90%;
+}
+
+.article-content .gallery {
+  margin: 2rem auto;
+  width: 90%;
+  justify-content: center;
+}
+
+.article-content .gallery figure {
+  flex: 0 1 auto;
+}
