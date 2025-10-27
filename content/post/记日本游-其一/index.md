@@ -1,6 +1,7 @@
 ---
 title: 记日本游-其一
 description: 第一次的出国，一次祛媚之旅
+image: fengmian.jpg
 date: 2025-10-27
 weight: 1
 categories: 
