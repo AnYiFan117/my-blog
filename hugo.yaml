@@ -232,13 +232,15 @@ markup:
                     inline:
                         - - \(
                           - \)
+                        - - $
+                          - $
         renderer:
             ## Set to true if you have HTML content inside Markdown
             unsafe: true
     tableOfContents:
         endLevel: 4
         ordered: true
-        startLevel: 2
+        startLevel: 1
     highlight:
         noClasses: false
         codeFences: true
