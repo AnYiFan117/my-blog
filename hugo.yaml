@@ -55,7 +55,7 @@ params:
 
     footer:
         since: 2025
-        customText: Wow
+        customText: 与其用脑子空想，不如直接开始行动。
 
     dateFormat:
         published: Jan 02, 2006
