@@ -1,7 +1,7 @@
 baseurl: https://anyifan117.github.io
 languageCode: en-us
 theme: stack
-title: AnYiFan
+title: AnYiFan's Blog
 copyright: AnYiFan
 
 # 更新时间：优先读取git时间 -> git时间不存在，就读取本地文件修改时间
@@ -29,7 +29,7 @@ languages:
         weight: 2
         params:
             sidebar:
-                subtitle: 一个又菜又爱玩的新人程序员
+                subtitle: a place to record my life
 
 services:
     # Change it to your Disqus shortname before using
