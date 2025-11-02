@@ -25,7 +25,7 @@ hasCJKLanguage: true
 languages:
     zh-cn:
         languageName: 中文
-        title: AnYiFan
+        title: AnYiFan's Blog site
         weight: 2
         params:
             sidebar:
